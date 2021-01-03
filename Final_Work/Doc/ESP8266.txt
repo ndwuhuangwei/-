@@ -1,0 +1,26 @@
+与原子云连接测试:
+1. AT+CWMODE=  选择模式 1:station, 2:ap, 3:station+ap
+station就是ESP8266作为client去连接其他server，比如连接手机热点
+ap就是ESP8266作为server等着其他client来连接，这时候就是手机去连接ESP8266的热点
+
+2. AT+CWJAP="wifi名称","wifi密码"
+station模式下ESP8266连接wifi
+
+AT+CWQAP
+wifi断连
+
+3. ATKCLDSTA="设备编号","密码"
+连上网后就可以连接原子云上的设备了
+
+AT+ATKCLDCLS
+断连原子云设备
+
+##########################################################
+
+遇到的坑
+
+在启动文件卡住？
+要把USART3的中断服务函数也给移过来
+
+app收不到数据？
+按设备连入顺序编号0, 1, 2, 3, 4; 发送的时候一定要认准编号

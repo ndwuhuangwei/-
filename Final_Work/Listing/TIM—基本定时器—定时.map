@@ -1,0 +1,115 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    startup_stm32f10x_hd.o(RESET) refers to startup_stm32f10x_hd.o(STACK) for __initial_sp
+    startup_stm32f10x_hd.o(RESET) refers to startup_stm32f10x_hd.o(.text) for Reset_Handler
+    startup_stm32f10x_hd.o(RESET) refers to stm32f10x_it.o(.text) for NMI_Handler
+    startup_stm32f10x_hd.o(.text) refers to system_stm32f10x.o(.text) for SystemInit
+    startup_stm32f10x_hd.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_stm32f10x.o(.text) refers to system_stm32f10x.o(.data) for SystemCoreClock
+    stm32f10x_adc.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_bkp.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_BackupResetCmd
+    stm32f10x_can.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_cec.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_dac.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_gpio.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_i2c.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_pwr.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_rcc.o(.text) refers to stm32f10x_rcc.o(.data) for APBAHBPrescTable
+    stm32f10x_spi.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_tim.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_usart.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_wwdg.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_it.o(.text) refers to stm32f10x_exti.o(.text) for EXTI_GetITStatus
+    stm32f10x_it.o(.text) refers to stm32f10x_tim.o(.text) for TIM_GetITStatus
+    bsp_basictim.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
+    bsp_basictim.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphClockCmd
+    bsp_basictim.o(.text) refers to stm32f10x_tim.o(.text) for TIM_TimeBaseInit
+    beep.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    beep.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    bsp_key.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
+    bsp_key.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    bsp_key.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    bsp_key.o(.text) refers to stm32f10x_exti.o(.text) for EXTI_Init
+    bsp_led.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    bsp_led.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    bsp_usart.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
+    bsp_usart.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    bsp_usart.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    bsp_usart.o(.text) refers to stm32f10x_usart.o(.text) for USART_Init
+    delay.o(.text) refers to misc.o(.text) for SysTick_CLKSourceConfig
+    delay.o(.text) refers to system_stm32f10x.o(.data) for SystemCoreClock
+    delay.o(.text) refers to delay.o(.data) for fac_us
+    sys.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
+    spi.o(.text) refers to stm32f10x_spi.o(.text) for SPI_I2S_GetFlagStatus
+    spi.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    spi.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    tftlcd.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    tftlcd.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    tftlcd.o(.text) refers to delay.o(.text) for delay_ms
+    tftlcd.o(.text) refers to spi.o(.text) for SPI2_Init
+    tftlcd.o(.text) refers to tftlcd.o(.bss) for lcd_buf
+    tftlcd.o(.text) refers to tftlcd.o(.data) for POINT_COLOR
+    tftlcd.o(.text) refers to tftlcd.o(.constdata) for asc2_1608
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32f10x_hd.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32f10x_hd.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_stm32f10x_hd.o(HEAP), (512 bytes).
+    Removing core_cm3.o(.emb_text), (32 bytes).
+    Removing misc.o(.text), (220 bytes).
+    Removing stm32f10x_adc.o(.text), (1102 bytes).
+    Removing stm32f10x_bkp.o(.text), (196 bytes).
+    Removing stm32f10x_can.o(.text), (2544 bytes).
+    Removing stm32f10x_cec.o(.text), (288 bytes).
+    Removing stm32f10x_crc.o(.text), (72 bytes).
+    Removing stm32f10x_dac.o(.text), (396 bytes).
+    Removing stm32f10x_dbgmcu.o(.text), (48 bytes).
+    Removing stm32f10x_dma.o(.text), (596 bytes).
+    Removing stm32f10x_flash.o(.text), (1468 bytes).
+    Removing stm32f10x_fsmc.o(.text), (1548 bytes).
+    Removing stm32f10x_gpio.o(.text), (860 bytes).
+    Removing stm32f10x_i2c.o(.text), (1028 bytes).
+    Removing stm32f10x_iwdg.o(.text), (64 bytes).
+    Removing stm32f10x_pwr.o(.text), (204 bytes).
+    Removing stm32f10x_rtc.o(.text), (328 bytes).
+    Removing stm32f10x_sdio.o(.text), (468 bytes).
+    Removing stm32f10x_spi.o(.text), (780 bytes).
+    Removing stm32f10x_usart.o(.text), (1032 bytes).
+    Removing stm32f10x_wwdg.o(.text), (136 bytes).
+    Removing bsp_basictim.o(.text), (132 bytes).
+    Removing beep.o(.text), (44 bytes).
+    Removing bsp_key.o(.text), (240 bytes).
+    Removing bsp_led.o(.text), (96 bytes).
+    Removing bsp_usart.o(.text), (420 bytes).
+    Removing delay.o(.text), (212 bytes).
+    Removing delay.o(.data), (4 bytes).
+    Removing sys.o(.text), (12 bytes).
+    Removing spi.o(.text), (324 bytes).
+    Removing tftlcd.o(.text), (2684 bytes).
+    Removing tftlcd.o(.bss), (1152 bytes).
+    Removing tftlcd.o(.constdata), (58740 bytes).
+    Removing tftlcd.o(.data), (4 bytes).
+
+35 unused section(s) (total 77986 bytes) removed from the image.
